@@ -5,6 +5,22 @@ body {
   background-color: #f2f2f2;
 }
 
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.movie-list a {
+  margin: 20px;
+  text-decoration: none;
+  color: #323232;
+  width: 30%;
+  max-width: 400px;
+  text-align: center;
+}
+
 .movie-card {
   background-color: #fff;
   border: 0;
@@ -14,6 +30,26 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+}
+
+.movie-card h2 {
+  background-color: #323232;
+  color: white;
+  margin: 0 0 20px 0;
+  padding: 20px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .movie-list a {
+    width: 100%;
+  }
+  .movie-card h2 {
+    /* font-size: 1.15rem; */
+  }
 }
 
 .movie-director {
